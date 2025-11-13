@@ -17,7 +17,7 @@ const FooterColumn: React.FC<{ title: string; links: {key: string, label: string
 export const Footer: React.FC = () => {
     const { t } = useTranslation();
 
-  const socialLinks = ['Facebook', 'Instagram', 'Twitter', 'TikTok'].map(s => ({key: s.toLowerCase(), label: s}));
+  const socialLinks = ['Instagram','TikTok'].map(s => ({key: s.toLowerCase(), label: s}));
   const aboutLinks = [
       { key: 'contact', label: t('footer_contact') },
       { key: 'company', label: t('footer_company') },
